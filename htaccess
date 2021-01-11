@@ -1,0 +1,11 @@
+ErrorDocument 400 http://lolman707.xyz/error/400.html
+ErrorDocument 401 http://lolman707.xyz/error/401.html
+ErrorDocument 403 http://lolman707.xyz/error/403.html
+ErrorDocument 404 http://lolman707.xyz/error/404.html
+ErrorDocument 503 http://lolman707.xyz/error/503.html
+DirectoryIndex index.html
+RewriteEngine On
+RewriteCond %{HTTP:X-Forwarded-Proto} =http
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+AllowOverride All
+AddType application/wasm .wasm
