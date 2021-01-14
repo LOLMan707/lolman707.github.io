@@ -10,19 +10,16 @@
   </head>
   <body>
     <h1>papa's burgeria!!!</h1>
-    <embed src="/flash/swf/papasburgeria.swf" width="640" height="480"> </embed>
     <script src="https://cdn.getsupernova.com/tags/supernovalauncher.js"></script>
-    <script>
+	<script>
     supernova.launch({
-    mode: "extensionprompt",
     el: document.querySelector("#game"),
-    partnerlogo: "",
+    swfurl: "/swf/papasburgeria.swf",
     title: "Papa's Burgeria",
-    icon: "",
-    embedbar: true,
-    dropdown: true,
-    });
-    </script>
+    width: 640,
+    height: 480
+});
+</script>
     <br>
     <a href="/flash.html">back</a>
   </body>
